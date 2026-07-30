@@ -67,6 +67,7 @@ section {
     padding: 30px;
     border-radius: 12px;
     margin-bottom: 30px;
+    transition: .3s;
 }
 
 
@@ -80,12 +81,13 @@ section {
 
 
 .card {
-    flex: 1;
-    min-width: 250px;
-    background: #ffffff;
-    border: 1px solid #ddd;
-    padding: 25px;
-    border-radius: 10px;
+    flex:1;
+    min-width:250px;
+    background:#ffffff;
+    border:1px solid #ddd;
+    padding:25px;
+    border-radius:10px;
+    transition:.3s;
 }
 
 
@@ -178,112 +180,66 @@ footer {
     color:#666;
 }
 
-/* ===== MODO ESCURO ===== */
+/* ===========================
+   MODO ESCURO
+=========================== */
 
-body.dark {
-    background: #121212;
-    color: #f1f1f1;
-}
-
-body.dark header,
-body.dark nav,
-body.dark footer {
-    background: #1b1b1b;
-}
-
-body.dark .card,
-body.dark .player {
-    background: #222;
-    color: #fff;
-    border: 1px solid #444;
-}
-
-body.dark a {
-    color: #7db7ff;
-}
-
-#tema-btn {
-    margin-top: 15px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background: #333;
-    color: white;
-    font-size: 15px;
-}
-
-#tema-btn:hover {
-    background: #555;
-}
-
-/* Fundo principal */
 body.dark{
     background:#121212;
-    color:#f2f2f2;
+    color:#eee;
 }
 
 /* Cabeçalho */
+
 body.dark header{
-    background:#1b1b1b;
+    background:#1d1d1d;
 }
 
 /* Menu */
+
 body.dark nav{
-    background:#202020;
+    background:#252525;
 }
 
-/* Seções brancas */
+/* Seções */
+
 body.dark section{
-    background:#1e1e1e;
-    color:#f2f2f2;
+    background:#1f1f1f !important;
+    color:white;
 }
 
 /* Cards */
-body.dark .card,
-body.dark .player{
-    background:#262626;
-    border:1px solid #3b3b3b;
-    color:#fff;
+
+body.dark .card{
+    background:#2a2a2a !important;
+    border:1px solid #444;
+    color:white;
+}
+
+/* Links */
+
+body.dark a{
+    color:#6fb3ff;
+}
+
+/* Rodapé */
+
+body.dark footer{
+    background:#1d1d1d;
+    color:#bbb;
 }
 
 /* Títulos */
+
 body.dark h1,
 body.dark h2,
 body.dark h3,
 body.dark h4{
-    color:#ffffff;
-}
-
-/* Parágrafos */
-body.dark p{
-    color:#d5d5d5;
-}
-
-/* Links */
-body.dark a{
-    color:#63a4ff;
-}
-
-body.dark a:hover{
-    color:#9ec9ff;
-}
-
-/* Rodapé */
-body.dark footer{
-    background:#1b1b1b;
-    color:#ddd;
-}
-
-#tema-btn{
-    position:fixed;
-    top:15px;
-    right:15px;
-    z-index:999;
-    padding:10px 16px;
-    border:none;
-    border-radius:30px;
-    background:#2d2d2d;
     color:white;
-    cursor:pointer;
+}
+
+/* Texto */
+
+body.dark p{
+    color:#d0d0d0;
 }
