@@ -1,39 +1,36 @@
 // uminternauta
 // Arquivo principal de JavaScript
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
-    console.log("uminternauta carregado com sucesso!");
+    console.log("uminternauta carregado!");
 
-    // Permite apenas um player tocando por vez
-    const players = document.querySelectorAll("audio");
+    // Modo claro/escuro
+    const botaoTema = document.getElementById("tema-btn");
 
-    players.forEach(player => {
-        player.addEventListener("play", () => {
-            players.forEach(outro => {
-                if (outro !== player) {
-                    outro.pause();
+    if (botaoTema) {
+        botaoTema.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+
+            botaoTema.textContent =
+                document.body.classList.contains("dark")
+                    ? "☀️ Modo claro"
+                    : "🌙 Modo noturno";
+        });
+    }
+
+    // Apenas um áudio por vez
+    const audios = document.querySelectorAll("audio");
+
+    audios.forEach(audio => {
+        audio.onplay = function () {
+            audios.forEach(a => {
+                if (a !== this) {
+                    a.pause();
+                    a.currentTime = 0; // opcional: volta ao início
                 }
             });
-        });
+        };
     });
 
 });
-
-const botaoTema = document.getElementById("tema-btn");
-
-if (botaoTema) {
-
-    botaoTema.addEventListener("click", () => {
-
-        document.body.classList.toggle("dark");
-
-        if (document.body.classList.contains("dark")) {
-            botaoTema.innerHTML = "☀️ Modo claro";
-        } else {
-            botaoTema.innerHTML = "🌙 Modo noturno";
-        }
-
-    });
-
-}
