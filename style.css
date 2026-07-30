@@ -177,3 +177,42 @@ footer {
     font-size:14px;
     color:#666;
 }
+
+/* ===== MODO ESCURO ===== */
+
+body.dark {
+    background: #121212;
+    color: #f1f1f1;
+}
+
+body.dark header,
+body.dark nav,
+body.dark footer {
+    background: #1b1b1b;
+}
+
+body.dark .card,
+body.dark .player {
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+body.dark a {
+    color: #7db7ff;
+}
+
+#tema-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    font-size: 15px;
+}
+
+#tema-btn:hover {
+    background: #555;
+}
