@@ -1,10 +1,22 @@
 // uminternauta
 // Arquivo principal de JavaScript
 
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
     console.log("uminternauta carregado com sucesso!");
+
+    // Permite apenas um player tocando por vez
+    const players = document.querySelectorAll("audio");
+
+    players.forEach(player => {
+        player.addEventListener("play", () => {
+            players.forEach(outro => {
+                if (outro !== player) {
+                    outro.pause();
+                }
+            });
+        });
+    });
 
 });
 
