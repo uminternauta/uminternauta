@@ -274,3 +274,16 @@ body.dark footer{
     background:#1b1b1b;
     color:#ddd;
 }
+
+#tema-btn{
+    position:fixed;
+    top:15px;
+    right:15px;
+    z-index:999;
+    padding:10px 16px;
+    border:none;
+    border-radius:30px;
+    background:#2d2d2d;
+    color:white;
+    cursor:pointer;
+}
