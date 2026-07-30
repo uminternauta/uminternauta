@@ -268,3 +268,25 @@ body.dark p{
 #tema-btn:hover{
     background:#2563eb;
 }
+
+.card{
+    box-shadow:0 6px 18px rgba(0,0,0,.35);
+}
+
+.card{
+    transition:.25s;
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#3b82f6;
+
+}
+
+header{
+
+    border-bottom:1px solid #303030;
+
+}
