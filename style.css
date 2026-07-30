@@ -243,3 +243,28 @@ body.dark h4{
 body.dark p{
     color:#d0d0d0;
 }
+
+#tema-btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:1000;
+
+    padding:10px 18px;
+
+    background:#3b82f6;
+    color:white;
+
+    border:none;
+    border-radius:25px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+#tema-btn:hover{
+    background:#2563eb;
+}
