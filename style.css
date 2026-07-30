@@ -62,11 +62,12 @@ main {
 }
 
 
-section {
-    background: white;
+.caixa{
+    background: #1f1f1f;
     padding: 30px;
     border-radius: 12px;
     margin-bottom: 30px;
+}
     transition: .3s;
 }
 
