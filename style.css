@@ -1,3 +1,8 @@
+```css
+/* =========================
+   CONFIGURAÇÃO GERAL
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +15,6 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
 
 /* =========================
    CABEÇALHO
@@ -28,7 +32,6 @@ header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
 }
-
 
 /* =========================
    MENU
@@ -51,7 +54,6 @@ nav a:hover {
     color: #60a5fa;
 }
 
-
 /* =========================
    CONTEÚDO
 ========================= */
@@ -61,7 +63,6 @@ main {
     margin: 40px auto;
     padding: 20px;
 }
-
 
 /* =========================
    SEÇÕES
@@ -79,9 +80,7 @@ section {
     padding: 30px;
     border-radius: 12px;
     margin-bottom: 30px;
-    transition: 0.3s;
 }
-
 
 /* =========================
    CARDS
@@ -113,7 +112,6 @@ section {
     border-color: #3b82f6;
 }
 
-
 /* =========================
    TÍTULOS DOS CARDS
 ========================= */
@@ -127,7 +125,6 @@ section {
     margin-bottom: 8px;
 }
 
-
 /* =========================
    ÁUDIO
 ========================= */
@@ -136,7 +133,6 @@ section {
     width: 100%;
     margin-bottom: 8px;
 }
-
 
 /* =========================
    PLAYER DE JINGLES
@@ -171,7 +167,6 @@ section {
     width: 100%;
     margin-bottom: 15px;
 }
-
 
 /* =========================
    PLAYER PERSONALIZADO
@@ -214,7 +209,6 @@ section {
     color: #666;
 }
 
-
 /* =========================
    RODAPÉ
 ========================= */
@@ -226,7 +220,6 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
-
 
 /* =========================
    BOTÃO MODO ESCURO
@@ -250,7 +243,6 @@ footer {
 #tema-btn:hover {
     background: #2563eb;
 }
-
 
 /* =========================
    MODO ESCURO
@@ -315,7 +307,6 @@ body.dark h4 {
 body.dark p {
     color: #d0d0d0;
 }
-
 
 /* =========================
    RESPONSIVO
