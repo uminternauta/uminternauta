@@ -73,10 +73,10 @@ main {
 
 /* Cards */
 
-.card{
-    display:flex;
-    flex-direction:column;
-    min-height:420px;
+.card {
+    height: auto;
+    min-height: 0;
+    padding: 20px;
 }
 
 
@@ -300,4 +300,15 @@ header{
 
     border-bottom:1px solid #303030;
 
+}
+
+/* Ajuste do tamanho das caixas */
+.cards {
+    align-items: flex-start;
+}
+
+.card {
+    height: auto;
+    min-height: 0;
+    padding: 20px;
 }
