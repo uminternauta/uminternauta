@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (botaoTema) {
         botaoTema.addEventListener("click", () => {
+
             document.body.classList.toggle("dark");
 
             botaoTema.textContent =
@@ -23,14 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const audios = document.querySelectorAll("audio");
 
     audios.forEach(audio => {
+
         audio.onplay = function () {
+
             audios.forEach(a => {
+
                 if (a !== this) {
                     a.pause();
-                    a.currentTime = 0; // opcional: volta ao início
+                    a.currentTime = 0;
                 }
+
             });
+
         };
+
     });
 
 });
